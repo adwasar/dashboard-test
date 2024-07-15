@@ -32,8 +32,8 @@
     cursor: pointer;
     border-radius: 8px;
     &:hover {
-      color: $white;
       background-color: $blue-2;
+      transition: background-color 0.4s;
     }
   }
 
@@ -41,7 +41,6 @@
     color: $white;
     background-color: $blue-1;
     &:hover {
-      color: $white;
       background-color: $blue-1;
     }
   }
