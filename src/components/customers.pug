@@ -2,7 +2,7 @@ doctype html
 html(lang="en")
   head
     meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
     title Document
   body 
     div.customers
@@ -11,10 +11,7 @@ html(lang="en")
           h2.customers__header-title All Customers
           p.customers__header-subtitle Active Members
         div.search
-          img.search__icon(src="images/icons/content/search.svg", alt="#")
+          img.search__icon(src="images/icons/content/search.svg" alt="#")
           input.search__input(type="text" placeholder="Search")
-      
-      p 
-        | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo ab accusantium suscipit iste saepe, officiis nostrum amet dolorum itaque ducimus nobis facere quam rem neque nam placeat autem cupiditate molestias?
-        | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo ab accusantium suscipit iste saepe, officiis nostrum amet dolorum itaque ducimus nobis facere quam rem neque nam placeat autem cupiditate molestias?
-        | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo ab accusantium suscipit iste saepe, officiis nostrum amet dolorum itaque ducimus nobis facere quam rem neque nam placeat autem cupiditate molestias?
+
+      include ./table.pug

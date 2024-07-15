@@ -1,0 +1,75 @@
+.table {
+  margin-top: 2.5rem;
+  width: 100%;
+  table-layout: fixed;
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: -0.14px;
+  color: $gray-1;
+  overflow-x: scroll;
+
+  &__head th {
+    text-align: start;
+    font-weight: 500;
+  }
+
+  &__row-head {
+    height: 50px;
+    color: $gray-3;
+  }
+
+  &__row-body {
+    height: 6.9rem;
+    border-bottom: 1px solid $gray-8;
+  }
+
+  &__data-name {
+    width: 171px;
+  }
+  &__data-company {
+    width: 131px;
+  }
+  &__data-phone {
+    width: 156px;
+  }
+  &__data-email {
+    width: 207px;
+  }
+  &__data-country {
+    width: 140px;
+  }
+
+  thead &__data-status {
+    text-align: center;
+  }
+
+  tbody &__data-status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 29px;
+    border-radius: 4px;
+  }
+  
+  &__data-status--active {
+    color: $green-1;
+    background-color: $green-4;
+    border: solid 1px $green-1;
+  }
+  
+  &__data-status--inactive {
+    color: $red-1;
+    background-color: $red-2;
+    border: solid 1px $red-1;
+  }
+}
+
+.table-line {
+  position: absolute;
+  left: 0;
+  top: 165px;
+  width: 100%;
+  border-bottom: 1px solid $gray-8;
+  display: block;
+}
