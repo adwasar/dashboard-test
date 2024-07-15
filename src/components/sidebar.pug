@@ -6,24 +6,48 @@ html(lang="en")
     title Document
   body 
     aside.sidebar
-      img.sidebar__logo(src="images/icons/logo.svg" alt="Logo" height="37")
+      img.sidebar__logo(src="images/icons/logo.svg" alt="Logo")
+
       nav.sidebar__nav
         ul.sidebar__nav-list
           li.sidebar__nav-item
-            svg.sidebar__icon(width="24" height="24")
+            svg.sidebar__icon
               use(xlink:href="images/icons/dashboard/sprites.svg#icon-dashboard")
+            span Dashboard
           li.sidebar__nav-item
-            svg.sidebar__icon(width="24" height="24")
+            svg.sidebar__icon
               use(xlink:href="images/icons/dashboard/sprites.svg#icon-product")
-          li.sidebar__nav-item
-            svg.sidebar__icon(width="24" height="24")
+            span Product
+            svg.sidebar__chevron-right
+              use(xlink:href="images/icons/dashboard/sprites.svg#chevron-right")
+          li.sidebar__nav-item.sidebar__nav-item--selected
+            svg.sidebar__icon
               use(xlink:href="images/icons/dashboard/sprites.svg#icon-customers")
+            span Customers
+            svg.sidebar__chevron-right
+              use(xlink:href="images/icons/dashboard/sprites.svg#chevron-right")
           li.sidebar__nav-item
-            svg.sidebar__icon(width="24" height="24")
+            svg.sidebar__icon
               use(xlink:href="images/icons/dashboard/sprites.svg#icon-income")
+            span Income
+            svg.sidebar__chevron-right
+              use(xlink:href="images/icons/dashboard/sprites.svg#chevron-right")
           li.sidebar__nav-item
-            svg.sidebar__icon(width="24" height="24")
+            svg.sidebar__icon
               use(xlink:href="images/icons/dashboard/sprites.svg#icon-promote")
+            span Promote
+            svg.sidebar__chevron-right
+              use(xlink:href="images/icons/dashboard/sprites.svg#chevron-right")
           li.sidebar__nav-item
-            svg.sidebar__icon(width="24" height="24")
+            svg.sidebar__icon
               use(xlink:href="images/icons/dashboard/sprites.svg#icon-help")
+            span Help
+            svg.sidebar__chevron-right
+              use(xlink:href="images/icons/dashboard/sprites.svg#chevron-right")
+
+      div.sidebar__user
+        img.sidebar__user-img(src="images/avatar.png", alt="User's Avatar" width="42" height="42")
+        div.sidebar__user-wrapper
+          h2.sidebar__user-name Evano
+          p.sidebar__user-position Project Manager
+            
