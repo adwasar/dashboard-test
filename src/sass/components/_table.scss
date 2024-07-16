@@ -9,7 +9,7 @@
     max-width: 100%;
     font-size: 1.4rem;
     font-weight: 500;
-    letter-spacing: -0.14px;
+    letter-spacing: -0.014rem;
     color: $gray-1;
   }
 
@@ -19,73 +19,73 @@
   }
 
   &__row-head {
-    height: 50px;
+    height: 5rem;
     color: $gray-3;
   }
 
   &__row-body {
     height: 6.9rem;
-    border-bottom: 1px solid $gray-8;
+    border-bottom: 0.1rem solid $gray-8;
   }
 
   &__data-name {
     width: 19.4%;
-    min-width: 150px;
+    min-width: 15rem;
   }
   &__data-company {
     width: 14.7%;
-    min-width: 90px;
+    min-width: 9rem;
   }
   &__data-phone {
     width: 17.8%;
-    min-width: 130px;
+    min-width: 13rem;
   }
   &__data-email {
     width: 23.4%;
-    min-width: 190px;
+    min-width: 19rem;
   }
   &__data-country {
     width: 15.9%;
-    min-width: 120px;
+    min-width: 12rem;
   }
 
   thead &__data-status {
-    padding-left: 14px;
+    padding-left: 1.4rem;
   }
 
   tbody &__data-status {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 80px;
-    height: 29px;
-    border-radius: 4px;
+    width: 8rem;
+    height: 2.9rem;
+    border-radius: 0.4rem;
   }
   
   &__data-status--active {
     color: $green-1;
     background-color: $green-4;
-    border: solid 1px $green-1;
+    border: solid 0.1rem $green-1;
   }
   
   &__data-status--inactive {
     color: $red-1;
     background-color: $red-2;
-    border: solid 1px $red-1;
+    border: solid 0.1rem $red-1;
   }
 }
 
 .table-line {
   position: absolute;
   left: 0;
-  top: 165px;
+  top: 16.5rem;
   width: 100%;
-  border-bottom: 1px solid $gray-8;
+  border-bottom: 0.1rem solid $gray-8;
   display: block;
   @include v-lg {
-    top: 156px;
+    top: 15.6rem;
   }
   @include v-xs {
-    top: 225px;
+    top: 22.5rem;
   }
 }

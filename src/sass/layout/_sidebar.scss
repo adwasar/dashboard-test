@@ -5,13 +5,13 @@
   flex-direction: column;
   padding: 3.6rem 2.8rem 7.6rem;
   background-color: $white;
-  box-shadow: 0px 1rem 6rem 0px rgba(226, 236, 249, 0.5);
+  box-shadow: 0 1rem 6rem 0 rgba(226, 236, 249, 0.5);
   transition: transform 0.4s;
 
   @include v-md {
     position: fixed;
     transform: translateX(-100%);
-    padding: 32px 16px;
+    padding: 3.2rem 1.6rem;
     z-index: 1;
   }
 
@@ -42,7 +42,7 @@
     display: flex;
     align-items: center;
     cursor: pointer;
-    border-radius: 8px;
+    border-radius: 0.8rem;
     &:hover {
       background-color: $blue-2;
       transition: background-color 0.4s;
@@ -82,7 +82,7 @@
   }
 
   &__user-name {
-    margin: 2px 0 0;
+    margin: 0.2rem 0 0;
     font-size: 1.4rem;
     font-weight: 400;
     color: $black;

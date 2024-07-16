@@ -2,10 +2,10 @@
   position: relative;
   padding: 3rem 4.4rem 4rem 3.8rem;
   background-color: $white;
-  box-shadow: 0px 1rem 6rem rgba(226, 236, 249, 0.5);
+  box-shadow: 0 1rem 6rem rgba(226, 236, 249, 0.5);
   border-radius: 3rem;
   @include v-lg {
-    padding: 20px;
+    padding: 2rem;
   }
 
   &__header {
@@ -15,7 +15,7 @@
     @include v-xs {
       flex-direction: column;
       align-items: center;
-      gap: 32px;
+      gap: 3.2rem;
     }
   }
 
@@ -42,7 +42,7 @@
   }
 
   &__footer {
-    margin-top: 17px;
+    margin-top: 1.7rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,12 +59,12 @@
   }
 
   &__footer-pagination {
-    margin-right: -3px;
+    margin-right: -0.3rem;
     display: flex;
-    gap: 12px;
-    font-size: 12px;
+    gap: 1.2rem;
+    font-size: 1.2rem;
     @include v-xs {
-      gap: 6px;
+      gap: 0.6rem;
       margin-right: 0;
     }
   }
@@ -73,10 +73,10 @@
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 12px;
+    gap: 1.2rem;
     list-style: none;
     @include v-xs {
-      gap: 6px;
+      gap: 0.6rem;
     }
   }
 
@@ -85,7 +85,7 @@
   &__pagination-btn {
     padding: 0;
     border: none;
-    border-radius: 4px;
+    border-radius: 0.4rem;
     background-color: $gray-5;
     color: $gray-1;
     &:hover {
@@ -96,8 +96,8 @@
 
   &__pagination-prev,
   &__pagination-next {
-    width: 26px;
-    height: 24px;
+    width: 2.6rem;
+    height: 2.4rem;
   }
 
   .customers__pagination-btn--selected {
@@ -112,12 +112,12 @@
     text-align: center;
     position: relative;
     display: block;
-    top: 5px;
-    width: 10px;
+    top: 0.5rem;
+    width: 1rem;
   }
 
   &__pagination-btn {
-    width: 25px;
-    height: 24px;
+    width: 2.5rem;
+    height: 2.4rem;
   }
 }

@@ -2,13 +2,13 @@
   padding: 4.1rem 9.5rem 4.1rem 7.1rem;
   overflow-x: hidden;
   @include v-xl {
-    padding: 4.1rem 16px 4.1rem 16px;
+    padding: 4.1rem 1.6rem 4.1rem 1.6rem;
   }
   @include v-md {
     grid-area: 1 / 1 / 2 / 3;
   }
   @include v-sm {
-    padding: 32px 16px;
+    padding: 3.2rem 1.6rem;
   }
 
   &__title {
