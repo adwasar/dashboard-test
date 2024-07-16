@@ -1,11 +1,48 @@
 .burger-btn {
+  position: relative;
+  margin: 0;
+  padding: 0;
   position: absolute;
-  top: 32px;
+  top: 38px;
   right: 16px;
+  width: 28px;
+  height: 24px;
+  background-color: transparent;
+
+  border: 0;
   z-index: 2;
   display: none;
   @include v-md {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  span {
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 2px;
+    transition: all 0.4s;
+  }
+
+  span:nth-child(1) {
+    transform: translateY(-8px);
+  }
+  span:nth-child(3) {
+    transform: translateY(8px);
+  }
+
+  &--open {
+    span:nth-child(1) {
+      transform: rotate(45deg);
+    }
+    span:nth-child(2) {
+      display: none;
+    }
+    span:nth-child(3) {
+      transform: rotate(-45deg);
+    }
   }
 }
-
