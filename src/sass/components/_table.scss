@@ -3,6 +3,19 @@
 .table {
   width: 100%;
   overflow-x: auto;
+
+  &::-webkit-scrollbar {
+    height: 8px;
+  }
+  &::-webkit-scrollbar-track {
+    background: $blue-2;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $blue-1;
+    border-radius: 10px;
+  }
+
+  
   &__content {
     margin-top: 2.5rem;
     width: 100%;
