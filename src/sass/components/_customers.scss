@@ -1,10 +1,11 @@
 .customers {
   position: relative;
+  max-width: 968px;
   padding: 3rem 4.4rem 4rem 3.8rem;
   background-color: $white;
-  box-shadow: 0px 1rem 6rem rgba(226, 236, 249, 0.50);
+  box-shadow: 0px 1rem 6rem rgba(226, 236, 249, 0.5);
   border-radius: 3rem;
-  
+
   &__header {
     display: flex;
     justify-content: space-between;
@@ -25,5 +26,71 @@
     font-size: 1.4rem;
     font-weight: 400;
     letter-spacing: -0.014rem;
+  }
+
+  &__footer {
+    margin-top: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__footer-text {
+    color: $gray-3;
+  }
+
+  &__footer-pagination {
+    margin-right: -3px;
+    display: flex;
+    gap: 12px;
+    font-size: 12px;
+  }
+
+  &__footer-pagination-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 12px;
+    list-style: none;
+  }
+
+  &__pagination-prev,
+  &__pagination-next,
+  &__pagination-btn {
+    padding: 0;
+    border: none;
+    border-radius: 4px;
+    background-color: $gray-5;
+    color: $gray-1;
+    &:hover {
+      background-color: $blue-2;
+      transition: background-color 0.4s;
+    }
+  }
+
+  &__pagination-prev,
+  &__pagination-next {
+    width: 26px;
+    height: 24px;
+  }
+
+  .customers__pagination-btn--selected {
+    color: $white;
+    background-color: $blue-1;
+    &:hover {
+      background-color: $blue-1;
+    }
+  }
+
+  &__pagination-dots {
+    position: relative;
+    display: block;
+    top: 5px;
+    width: 10px;
+  }
+
+  &__pagination-btn {
+    width: 25px;
+    height: 24px;
   }
 }

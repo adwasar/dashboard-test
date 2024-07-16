@@ -15,3 +15,21 @@ html(lang="en")
           input.search__input(type="text" placeholder="Search")
 
       include ./table.pug
+
+      div.customers__footer
+        p.customers__footer-text Showing data 1 to 8 of 256K entries
+        div.customers__footer-pagination
+          button.customers__pagination-prev <
+          ul.customers__footer-pagination-list
+            - const mockArray = Array.from({length: 40} , (_, i) => i + 1)
+            each num in mockArray
+              if num === mockArray[0]
+                li
+                  button.customers__pagination-btn.customers__pagination-btn--selected= num
+              else if num < 5 || num === mockArray.length
+                li
+                  button.customers__pagination-btn= num
+              else if num === 5
+                li 
+                  span.customers__pagination-dots ...
+          button.customers__pagination-next >
