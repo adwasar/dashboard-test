@@ -4,6 +4,9 @@
   @include v-xl {
     padding: 4.1rem 16px 4.1rem 16px;
   }
+  @include v-md {
+    grid-area: 1 / 1 / 2 / 3;
+  }
 
   &__title {
     margin: 0 0 5.2rem;
