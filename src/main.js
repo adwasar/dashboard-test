@@ -24,8 +24,5 @@ paginationNavItems.forEach((item) => {
   item.addEventListener('click', () => {
     clearSelectedPaginationStatus()
     item.classList.add('customers__pagination-btn--selected')
-
-    const result = document.querySelector('.customers__pagination-btn--selected')
-    console.log(result.innerText)
   })
 })
