@@ -7,6 +7,9 @@
   @include v-md {
     grid-area: 1 / 1 / 2 / 3;
   }
+  @include v-sm {
+    padding: 32px 16px;
+  }
 
   &__title {
     margin: 0 0 5.2rem;

@@ -12,6 +12,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include v-xs {
+      flex-direction: column;
+      align-items: center;
+      gap: 32px;
+    }
   }
 
   &__header-title {
@@ -20,6 +25,9 @@
     font-size: 2.2rem;
     font-weight: 600;
     letter-spacing: -0.022rem;
+    @include v-xs {
+      text-align: center;
+    }
   }
 
   &__header-subtitle {
@@ -28,6 +36,9 @@
     font-size: 1.4rem;
     font-weight: 400;
     letter-spacing: -0.014rem;
+    @include v-xs {
+      text-align: center;
+    }
   }
 
   &__footer {
@@ -35,10 +46,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include v-sm {
+      flex-direction: column;
+    }
   }
 
   &__footer-text {
     color: $gray-3;
+    @include v-xs {
+      text-align: center;
+    }
   }
 
   &__footer-pagination {
@@ -46,6 +63,10 @@
     display: flex;
     gap: 12px;
     font-size: 12px;
+    @include v-xs {
+      gap: 6px;
+      margin-right: 0;
+    }
   }
 
   &__footer-pagination-list {
@@ -54,6 +75,9 @@
     display: flex;
     gap: 12px;
     list-style: none;
+    @include v-xs {
+      gap: 6px;
+    }
   }
 
   &__pagination-prev,
@@ -85,6 +109,7 @@
   }
 
   &__pagination-dots {
+    text-align: center;
     position: relative;
     display: block;
     top: 5px;

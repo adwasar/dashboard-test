@@ -83,6 +83,9 @@
   border-bottom: 1px solid $gray-8;
   display: block;
   @include v-lg {
-    top: 150px;
+    top: 156px;
+  }
+  @include v-xs {
+    top: 225px;
   }
 }
