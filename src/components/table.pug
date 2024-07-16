@@ -20,25 +20,26 @@ html(lang="en")
 
     span.table-line
 
-    table.table
-      thead.table__head
-        tr.table__row-head
-          th.table__data-name Customer Name
-          th.table__data-company Company
-          th.table__data-phone Phone Number
-          th.table__data-email Email
-          th.table__data-country Country
-          th.table__data-status Status
-      tbody
-        each customer in customers
-          tr.table__row-body
-            td= customer.name
-            td= customer.company
-            td= customer.phone
-            td= customer.email
-            td= customer.country
-            td
-              span(class=`table__data-status ${customer.status === 'Active' ? 'table__data-status--active' : 'table__data-status--inactive'}`)= customer.status
+    div.table  
+      table.table__content
+        thead.table__head
+          tr.table__row-head
+            th.table__data-name Customer Name
+            th.table__data-company Company
+            th.table__data-phone Phone Number
+            th.table__data-email Email
+            th.table__data-country Country
+            th.table__data-status Status
+        tbody
+          each customer in customers
+            tr.table__row-body
+              td= customer.name
+              td= customer.company
+              td= customer.phone
+              td= customer.email
+              td= customer.country
+              td
+                span(class=`table__data-status ${customer.status === 'Active' ? 'table__data-status--active' : 'table__data-status--inactive'}`)= customer.status
 
 
 

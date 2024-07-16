@@ -1,11 +1,17 @@
+
+
 .table {
-  margin-top: 2.5rem;
   width: 100%;
-  table-layout: fixed;
-  font-size: 1.4rem;
-  font-weight: 500;
-  letter-spacing: -0.14px;
-  color: $gray-1;
+  overflow-x: auto;
+  &__content {
+    margin-top: 2.5rem;
+    width: 100%;
+    max-width: 100%;
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: -0.14px;
+    color: $gray-1;
+  }
 
   &__head th {
     text-align: start;
@@ -24,18 +30,23 @@
 
   &__data-name {
     width: 19.4%;
+    min-width: 170px;
   }
   &__data-company {
     width: 14.7%;
+    min-width: 120px;
   }
   &__data-phone {
-    width: 17.5%;
+    width: 17.8%;
+    min-width: 150px;
   }
   &__data-email {
     width: 23.4%;
+    min-width: 200px;
   }
   &__data-country {
     width: 15.9%;
+    min-width: 130px;
   }
 
   thead &__data-status {
