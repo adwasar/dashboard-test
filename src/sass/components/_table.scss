@@ -30,27 +30,27 @@
 
   &__data-name {
     width: 19.4%;
-    min-width: 170px;
+    min-width: 150px;
   }
   &__data-company {
     width: 14.7%;
-    min-width: 120px;
+    min-width: 90px;
   }
   &__data-phone {
     width: 17.8%;
-    min-width: 150px;
+    min-width: 130px;
   }
   &__data-email {
     width: 23.4%;
-    min-width: 200px;
+    min-width: 190px;
   }
   &__data-country {
     width: 15.9%;
-    min-width: 130px;
+    min-width: 120px;
   }
 
   thead &__data-status {
-    text-align: center;
+    padding-left: 14px;
   }
 
   tbody &__data-status {
@@ -82,4 +82,7 @@
   width: 100%;
   border-bottom: 1px solid $gray-8;
   display: block;
+  @include v-lg {
+    top: 150px;
+  }
 }

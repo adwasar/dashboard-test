@@ -4,6 +4,9 @@
   background-color: $white;
   box-shadow: 0px 1rem 6rem rgba(226, 236, 249, 0.5);
   border-radius: 3rem;
+  @include v-lg {
+    padding: 20px;
+  }
 
   &__header {
     display: flex;
