@@ -1,0 +1,11 @@
+.burger-btn {
+  position: absolute;
+  top: 32px;
+  right: 16px;
+  z-index: 2;
+  display: none;
+  @include v-md {
+    display: inline-block;
+  }
+}
+
